@@ -14,11 +14,12 @@ import Container from '../components/box/container'
 const IndexPage = () => (
 
   
-  <div>
+  
     <Header />
+ 
 
  
-  </div>
+ 
 )
 
 export default IndexPage

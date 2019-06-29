@@ -8,7 +8,9 @@ const Avatar = styled.div`
 img {
   border-radius: 50%;
   overflow: hidden;
-  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
   
 `
