@@ -4,10 +4,8 @@ const Container = styled.div`
 	max-width: 1280px;
 	margin: auto;
 	width: 90%;
-	display: flex;
-  	
 	
-
+	
 	@media (min-width: 601px) {
 		width: 90%;
 	}

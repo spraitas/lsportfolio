@@ -3,7 +3,6 @@ import { StaticQuery, graphql } from "gatsby"
 import Img from 'gatsby-image'
 import styled from 'styled-components'
 
-
 const Avatar = styled.div`
 img {
   border-radius: 50%;
@@ -12,9 +11,7 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-  
 `
-
 
 const query = graphql`
   query {

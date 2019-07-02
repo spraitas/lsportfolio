@@ -1,12 +1,14 @@
-const path = require("path")
+const path = require('path')
 
 exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
     resolve: {
       alias: {
-        "Components": path.resolve(__dirname, "src/components"),
-        "Box": path.resolve(__dirname, "src/components/box"),
-      }
-    }
+        components: `${__dirname}/src/components`,
+        box: `${__dirname}/src/components/box`,
+        static: `${__dirname}/static/`,
+      
+      },
+    },
   })
 }
