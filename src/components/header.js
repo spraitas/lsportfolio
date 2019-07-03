@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import Container from './box/container'
 import Avatar from './box/avatar'
 
+
 import * as palette from "./box/variables.js"
 
 const Header = styled.div`
@@ -76,10 +77,10 @@ export default () => (
 
   render={data => (
    <Header> 
-	
+        
         <Avatar />
         <h3>{data.site.siteMetadata.title}</h3>
-      
+        
   
   </Header>
 
