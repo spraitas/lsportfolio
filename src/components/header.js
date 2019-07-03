@@ -5,23 +5,36 @@ import styled from 'styled-components'
 import Container from './box/container'
 import Avatar from './box/avatar'
 
-import * as palette from "./variables.js"
+import * as palette from "./box/variables.js"
 
 const Header = styled.div`
-  margin-top: 1px;
-  color: ${palette.ls_white};
-  padding: 5px 20px;
+  color: ${palette.ls_main};
   background: ${palette.ls_grey};
   box-shadow: rgba(45, 198, 173, 0.9) 1px 3px 11px -6px;
   
-  transition: background 1.5s ease;
-  z-index:99;
+  width: 100%;
+  height: 100px;
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  border: 0;
+  will-change: transform;
+  
+
+  
+ 
+  
+	
+
+
 `
 const Logo = styled.div`
+  
   transition: 0.5s;
-  height: 3.2rem;
-  width: 3.2rem;
+  height: 3.5rem;
+  width: 3.5rem;
   margin-right: 1.5rem;
+  
   
   &:hover {
     opacity: 0.2;
@@ -30,17 +43,19 @@ const Logo = styled.div`
   }
 `
 const HeaderTitle = styled.div`
-  color: ${palette.ls_main};
-  display: flex;
-  height: 100%;
-  justify-content: left;
+margin: 0 auto;
+  justify-content: space-between;
   align-items: center;
+  
 `
 const StyledLink = styled(Link)`
+  color: ${palette.ls_main};
   text-decoration: none;
+  position: relative;
   display: flex;
-	align-items: center;
-
+  align-items: center;
+    
+  
   &:focus, &:hover, &:visited, &:link, &:active {
       text-decoration: none;
 `
@@ -60,23 +75,15 @@ export default () => (
   `}
 
   render={data => (
+   <Header> 
 	
-      <Header>
-        
-        <Container>
-          <StyledLink to="/">
-          <Logo>
-          <Avatar />
-          </Logo>
+        <Avatar />
+        <h3>{data.site.siteMetadata.title}</h3>
+      
+  
+  </Header>
 
-          <HeaderTitle>
-          <span>{data.site.siteMetadata.title}</span>
-          </HeaderTitle>
-          </StyledLink>
-        </Container>
-        
-      </Header>
-     
+
      )}
      />
    )

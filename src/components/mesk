@@ -1,0 +1,89 @@
+  <main className={StyledMain}>
+    
+    <Content>
+      <Container>{children}</Container>
+    </Content>
+    
+    </main>
+
+
+
+
+    const StyledMain = styled.div`
+  transition: all ease-in-out .15s;
+
+  width: 100%;
+  padding-top: 1px;
+  background-color: ${palette.ls_grey};
+  border-top: 1px solid rgba(255, 255, 255, .7);
+  border-bottom: 1px solid rgba(255, 255, 255, .7);
+  padding-bottom: 1px;
+  box-shadow: 0 1px 4px rgba(${palette.ls_main}, .1),
+              0 -1px 4px rgba(${palette.ls_main}, .2);
+  transform: translate3d(0, 0, 0);
+
+  :global(.has-menu-open) & {
+    transform: translate3d(0, ($1.2 * 3), 0);
+
+    @media (min-width: 380) and (min-height: 500px) {
+      margin-top: $1.2 * 2.65;
+      margin-bottom: $1.2 * 19;
+      position: relative;
+      z-index: 2;
+      min-height: 500px;
+`
+
+const Content = styled.div`
+  width: 100%;
+  background-color: ${palette.ls_grey};
+
+  @media (max-width: 380px) {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+`
+
+
+
+
+const Header = styled.div`
+  color: ${palette.ls_white};
+  background: ${palette.ls_grey};
+  box-shadow: rgba(45, 198, 173, 0.9) 1px 3px 11px -6px;
+  
+  margin-top: 0px;
+  margin-bottom: 0px;
+  
+  padding: 0px 0px;
+
+  z-index: 1;
+  
+  @media (min-width: $screen-sm) and (min-height: 500px) {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    border: 0;
+    will-change: transform;
+}
+
+
+<Header>
+        
+        <Container>
+        
+          <StyledLink to="/">
+          <Logo>
+          <Avatar />
+          </Logo>
+
+          
+          <h3>{data.site.siteMetadata.title}</h3>
+          
+          </StyledLink>
+
+          
+        </Container>
+        
+      </Header>
