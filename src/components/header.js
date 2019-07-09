@@ -14,12 +14,14 @@ const Header = styled.div`
   box-shadow: rgba(45, 198, 173, 0.9) 1px 3px 11px -6px;
   
   width: 100%;
-  height: 100px;
+  height: 85px;
   z-index: -1;
   position: fixed;
   top: 0;
   border: 0;
   will-change: transform;
+
+  
   
 
   
@@ -37,6 +39,8 @@ const Logo = styled.div`
   margin-right: 1.5rem;
   
   
+  
+  
   &:hover {
     opacity: 0.2;
     transition: 0.2s;
@@ -44,16 +48,17 @@ const Logo = styled.div`
   }
 `
 const HeaderTitle = styled.div`
-margin: 0 auto;
-  justify-content: space-between;
+  margin: 11px;
+  
   align-items: center;
+  display: flex;
   
 `
 const StyledLink = styled(Link)`
   color: ${palette.ls_main};
   text-decoration: none;
   position: relative;
-  display: flex;
+  
   align-items: center;
     
   
@@ -76,11 +81,15 @@ export default () => (
   `}
 
   render={data => (
-   <Header> 
-        
+  <Header> 
+        <Container>
+        <HeaderTitle>
+        <Logo>
         <Avatar />
+        </Logo>
         <h3>{data.site.siteMetadata.title}</h3>
-        
+      </HeaderTitle>
+        </Container>
   
   </Header>
 

@@ -5,5 +5,5 @@ const typography = new Typography(
     moragaTheme
     );
 
-export const { scale, rhythm, options } = typography
+
 export default typography

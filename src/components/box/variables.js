@@ -3,5 +3,5 @@
 export const ls_main = '#2dc6ad';
 export const ls_txt = '#217f70';
 export const ls_white = '#fff';
-export const ls_grey = '#6a6a6b';
+export const ls_grey = '#F7F7F7';
 

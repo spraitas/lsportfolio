@@ -2,6 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from 'styled-components'
 import * as palette from "../components/box/variables.js"
+import Title from "../components/title"
+//import Button from "../components/button"
 
 
 import Layout from "../components/layout"
@@ -13,11 +15,12 @@ import Layout from "../components/layout"
 
 
 
-
 const IndexPage = () => (
     
   <Layout> 
-    <h1>I’m in a layout!</h1>
+  
+
+    <Title>I’m in a layout!</Title>
 
     
     

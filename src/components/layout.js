@@ -15,7 +15,7 @@ background: ${palette.ls_grey};
 transition: all ease-in-out .15s;
 
 width: 100%;
-margin-top: 100px;
+margin-top: 85px;
 margin-bottom: 200px;
 z-index: 1;
 min-height: 500px;
