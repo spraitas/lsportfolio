@@ -4,9 +4,7 @@ import React from "react"
 //import * as palette from "../components/box/variables.js"
 import Title from "../components/title"
 import Skills from '../components/skills'
-
-//import Button from "../components/button"
-
+import Button from '../components/box/button'
 import Layout from "../components/layout"
 
 
@@ -20,11 +18,8 @@ import Layout from "../components/layout"
 const IndexPage = () => (
     
   <Layout> 
-  
-
-    <Title>I’m in a layout!</Title>
-
     
+    <Button />
     <Skills />
     
     
@@ -42,13 +37,6 @@ Risus at ultrices mi tempus. Turpis in eu mi bibendum neque egestas. Quis commod
 
   </Layout>
 
-
-
-    
-   
-
- 
- 
 )
 
 export default IndexPage

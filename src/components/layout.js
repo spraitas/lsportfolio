@@ -49,8 +49,7 @@ const Layout = ({ children }) => {
    
     <Footer />
 
-  </StyledMain>    
-    
+    </StyledMain>    
     </>
   )
 }
