@@ -1,6 +1,6 @@
 
 import styled from 'styled-components'
-import * as palette from "./box/variables.js"
+import * as palette from "./variables.js"
 
 
 const Button = styled.div`

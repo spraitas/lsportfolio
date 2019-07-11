@@ -1,8 +1,7 @@
 import React from 'react'
 import { StaticQuery, graphql } from "gatsby"
-import Img from 'gatsby-image'
+//import Img from 'gatsby-image'
 import styled from 'styled-components'
-import Container from './box/container'
 
 
 import Avatar from './box/avatar'
@@ -21,6 +20,8 @@ const Footer = styled.div`
   color: ${palette.ls_main};
   background: ${palette.ls_grey};
 `
+
+
 
 
 
@@ -45,8 +46,7 @@ const query = graphql`
  
 `
 
-export default () => (
- 
+export default () => ( 
   <StaticQuery
   query={query}
   render={data => (
@@ -58,7 +58,7 @@ export default () => (
     
     <p>
     &copy;{year + ' '}
-      <a href={data.site.siteMetadata.author.url}> {data.site.siteMetadata.author.name}
+      <a href={"mailto:" + data.site.siteMetadata.author.email}> {data.site.siteMetadata.author.name}
       </a>
     </p>
   </Footer>

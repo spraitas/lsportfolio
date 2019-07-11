@@ -1,12 +1,14 @@
 import React from "react"
-import { Link } from "gatsby"
-import styled from 'styled-components'
-import * as palette from "../components/box/variables.js"
+//import { Link } from "gatsby"
+//import styled from 'styled-components'
+//import * as palette from "../components/box/variables.js"
 import Title from "../components/title"
+import Skills from '../components/skills'
+
 //import Button from "../components/button"
 
-
 import Layout from "../components/layout"
+
 
 
 
@@ -22,6 +24,9 @@ const IndexPage = () => (
 
     <Title>I’m in a layout!</Title>
 
+    
+    <Skills />
+    
     
     
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elit sed vulputate mi sit amet. Ornare aenean euismod elementum nisi quis eleifend quam. Tempor nec feugiat nisl pretium fusce id velit ut tortor. Non arcu risus quis varius quam quisque id diam. Fames ac turpis egestas integer. Id donec ultrices tincidunt arcu non. Nulla malesuada pellentesque elit eget gravida cum. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit amet. Volutpat est velit egestas dui.

@@ -26,9 +26,9 @@ border-top: 1px solid rgba(255, 255, 255, .7);
 border-bottom: 1px solid rgba(255, 255, 255, .7);
 
 @media (max-width: 380px) {
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
+  width: 100%;
+  margin-top: 85px;
+  text-align: left;
 }
 
 `

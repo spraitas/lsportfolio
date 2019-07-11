@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import * as palette from "./box/variables.js"
 
@@ -20,8 +20,7 @@ const TitleH1 = styled.h1`
 
 const Title = ({ children }) => {
     return (
-        <TitleH1><h1>{children}</h1><span /></TitleH1>
+        <TitleH1><h2>{children}</h2><span /></TitleH1>
     )
 }
-
 export default Title

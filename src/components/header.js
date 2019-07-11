@@ -5,7 +5,6 @@ import styled from 'styled-components'
 import Container from './box/container'
 import Avatar from './box/avatar'
 
-
 import * as palette from "./box/variables.js"
 
 const Header = styled.div`
@@ -21,25 +20,18 @@ const Header = styled.div`
   border: 0;
   will-change: transform;
 
-  
-  
-
-  
- 
-  
-	
-
+  @media (max-width: 380px) {
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+  }
 
 `
 const Logo = styled.div`
-  
   transition: 0.5s;
   height: 3.5rem;
   width: 3.5rem;
   margin-right: 1.5rem;
-  
-  
-  
   
   &:hover {
     opacity: 0.2;
@@ -47,25 +39,17 @@ const Logo = styled.div`
     transform: rotate(-360deg);
   }
 `
-const HeaderTitle = styled.div`
+const HeaderTitle = styled(Link)`
+  color: ${palette.ls_main};
   margin: 11px;
-  
   align-items: center;
   display: flex;
-  
-`
-const StyledLink = styled(Link)`
-  color: ${palette.ls_main};
   text-decoration: none;
-  position: relative;
-  
-  align-items: center;
-    
-  
-  &:focus, &:hover, &:visited, &:link, &:active {
-      text-decoration: none;
-`
 
+  &:focus, &:hover, &:visited, &:link, &:active {
+    text-decoration: none;
+    color: ${palette.ls_main};
+`
 
 export default () => (
 
@@ -83,12 +67,12 @@ export default () => (
   render={data => (
   <Header> 
         <Container>
-        <HeaderTitle>
+        <HeaderTitle to="/">
         <Logo>
         <Avatar />
         </Logo>
         <h3>{data.site.siteMetadata.title}</h3>
-      </HeaderTitle>
+        </HeaderTitle>
         </Container>
   
   </Header>
