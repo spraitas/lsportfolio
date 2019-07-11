@@ -3,7 +3,7 @@ const allConfig = require('./config')
 module.exports = {
   siteMetadata: {
     ...allConfig,
-    title: 'web design',
+    title: 'Spraitas',
   },
 
 

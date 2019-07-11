@@ -11,7 +11,7 @@ import * as palette from "./box/variables.js"
 
 const Baground = styled.div`
   background-color: ${palette.ls_light};
-  clip-path: polygon(0% 8%, 100% 0, 100% 90%, 0 100%);
+  clip-path: polygon(0% 7%, 100% 0, 100% 93%, 0 100%);
   width: 100vw;
   position: relative;
   left: 50%;

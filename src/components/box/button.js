@@ -63,7 +63,11 @@ export default () => (
           About me
         </Button>
 
-        <Button>
+        <Button
+        href="https://www.linkedin.com/in/smatauras/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >
           Resume          
         </Button>
     </FlexBox> 
